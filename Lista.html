@@ -1,0 +1,130 @@
+"Exercício"
+3- Veja a seguinte tabela de preços:
+Monitor - 40.000,00 Kz
+CPU - 35.000,00 Kz
+Teclado - 30.000,00 Kz
+Mouse - 25.000,00 Kz
+Caixa de Som - 20.000,00 Kz
+Impressora - 60.000,00 Kz
+a) Baseando-se na tabela acima, represente a lista dos artigos na página HTML para vender os artigos e faça com que quado o cliente clicar no ítem apareça uma mensagem pedindo a sua confirmação [sim] ou [não] usando prompt. E quando ele escrever [sim] faça com que apareça um alerta ("A sua compra foi efetuada com sucesso");. Caso for [não] ("A sua compra foi cancelada ");. Se não escolher nenhum dos dois ("resposta invalida")
+
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="projecto.css" />
+  <meta name="description" "dontent="" />
+ <meta name=" keywords" content="" />
+  <title>Lista de preços</title>
+  <style>
+    body {
+      background: rgb(78, 142, 236);
+    }
+
+    ul li {
+      font-size: 18px;
+      font-family: serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lista de Electronicos</h1>
+  <ul>
+    <li id="res" onclick="clicar0()">Monitor - 40.000,00 Kz</li>
+    <li id="res1" onclick="clicar1()">CPU - 35.000,00 Kz</li>
+    <li id="res2" onclick="clicar2()">Teclado - 30.000,00 Kz</li>
+    <li id="res3" onclick="clicar3()">Mouse - 25.000,00 Kz</li>
+    <li id="res4" onclick="clicar4()">Caixa de Som - 20.000,00 Kz</li>
+    <li id="res5" onclick="clicar5()">Impressora - 60.000,00 Kz</li>
+  </ul>
+  <script type="text/javascript">
+    function clicar0() {
+      var r = document.getElementById('res');
+      r = prompt('Tens a certeza que desejas obter este produto? sim ou não?');
+      if (r == 'sim') {
+        alert('A sua compra foi efetuada com sucesso');
+      } else if (r == 'não') {
+        alert('A sua compra foi cancelada')
+      } else {
+        alert('Resposta inválida');
+
+      }
+    };
+
+    function clicar1() {
+      var r = document.getElementById('res1');
+      r = prompt('Tens a certeza que desejas obter este produto? sim ou não?');
+      if (r == 'sim') {
+        alert('A sua compra foi efetuada com sucesso');
+      } else if (r == 'não') {
+        alert('A sua compra foi cancelada')
+      } else {
+        alert('Resposta inválida');
+
+      }
+    }
+
+
+    function clicar2() {
+      var r = document.getElementById('res2');
+      r = prompt('Tens a certeza que desejas obter este produto? sim ou não?');
+      if (r == 'sim') {
+        alert('A sua compra foi efetuada com sucesso');
+      } else if (r == 'não') {
+        alert('A sua compra foi cancelada')
+      } else {
+        alert('Resposta inválida');
+
+      }
+    }
+
+
+    function clicar3() {
+      var r = document.getElementById('res3');
+      var r = document.getElementById('res2');
+      r = prompt('Tens a certeza que desejas obter este produto? sim ou não?');
+      if (r == 'sim') {
+        alert('A sua compra foi efetuada com sucesso');
+      } else if (r == 'não') {
+        alert('A sua compra foi cancelada')
+      } else {
+        alert('Resposta inválida');
+
+      }
+    }
+
+
+    function clicar4() {
+      var r = document.getElementById('res4');
+      r = prompt('Tens a certeza que desejas obter este produto? sim ou não?');
+      if (r == 'sim') {
+        alert('A sua compra foi efetuada com sucesso');
+      } else if (r == 'não') {
+        alert('A sua compra foi cancelada')
+      } else {
+        alert('Resposta inválida');
+
+      }
+    }
+
+
+    function clicar5() {
+      var r = document.getElementById('res5');
+      r = prompt('Tens a certeza que desejas obter este produto? sim ou não?');
+      if (r == 'sim') {
+        alert('A sua compra foi efetuada com sucesso');
+      } else if (r == 'não') {
+        alert('A sua compra foi cancelada')
+      } else {
+        alert('Resposta inválida');
+
+      }
+    }
+  </script>
+</body>
+
+</html>

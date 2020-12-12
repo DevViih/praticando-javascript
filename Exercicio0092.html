@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Nacionalidade</title>
+    <style>
+      body{
+        background:purple;
+        
+      }
+      div#res{
+        font:normal 20pt Arial;
+        margin-top:20px;
+      }
+      input{
+        font:normal 15pt Arial ;
+        width:160px;
+      }
+      h1{
+        font:noraml 25pt Arial;
+        color:blue;
+      }
+    </style>
+</head>
+
+<body>
+  <h1>Descubra sua nacionalidade</h1>
+   <input type="text" name="txtn" id="txtn" value="" />
+  <input type="button" name="nacionalide" id="nacionalide" value="país" onclick="clicar()"/>
+
+  <div id="res"></div>
+
+  <script>
+  function clicar(){
+    var n = document.getElementById("txtn")
+    var res = document.getElementById("res")
+    var na = String(txtn.value)
+    
+    res.innerHTML= "<strong>Seja bem vinda!!</strong>"
+    if (na != "Brasil" && na!= "BRASIL"){
+      res.innerHTML+="<p><strong>você é estrangeira!!<p></strong> "
+    }else{
+      res.innerHTML +="<p><strong>vocé é brasileira!!</p></strong>"
+    }
+
+  }
+  </script>
+
+</body>
+
+</html>
